@@ -1,0 +1,1 @@
+sudo iptables -D INPUT -p tcp -s 10.0.0.0/8 --dport 22 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
